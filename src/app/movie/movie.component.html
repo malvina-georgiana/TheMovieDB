@@ -1,0 +1,17 @@
+<div class="row mb-2">
+    <div  *ngFor="let movie of movies" class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static" [style.background-image]="'url(' + movie.backdrop_path + ')'">
+                <strong class="d-inline-block mb-2 text-primary">{{ movie.original_title }}</strong>
+                <h3 class="mb-0 title">{{ movie.title }}</h3>
+                <div class="mb-1 text-muted">Release date: {{ movie.release_date }}</div>
+                <p class="card-text mb-auto">{{ movie.overflow }}</p>
+                <a class="stretched-link" routerLink="/details/{{movie.id}}">View Details</a>
+                <img src="https://image.tmdb.org/t/p/w500/{{movie.backdrop_path}}"/>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+            
+            </div>
+        </div>
+    </div>
+</div>

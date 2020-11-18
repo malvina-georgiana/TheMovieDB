@@ -1,0 +1,61 @@
+.container-wrapper{
+    margin-top: 80px;
+}
+.header{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(8.24%, 31.96%, 31.57%, 1.00);
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: inherit;
+    height: 500px;;
+    flex-wrap: wrap;
+
+}
+.movieContent{
+    background-image: linear-gradient(to right, rgba(5.88%, 27.45%, 27.06%, 1.00) 150px, rgba(10.59%, 36.47%, 36.08%, 0.84) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    flex-flow: row;
+}
+.imageContainer{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 40%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.detailsContainer{
+    padding: 20px;
+    color: white;
+}
+h2{
+    color: white;
+    display: block;
+}
+.headerInfo{
+    padding: 20px;
+}
+.genres{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+}
+ul{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+.items{
+    display: flex;
+    flex-flow: column;
+    margin-right: auto;
+}

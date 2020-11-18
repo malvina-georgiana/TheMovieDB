@@ -1,0 +1,27 @@
+<div class="container-wrapper">
+    <div class="header" [style.background-image]="'url(https://image.tmdb.org/t/p/w500/' + movieDetails.backdrop_path + ')'">
+        <div class="movieContent">
+            <div class="imageContainer">
+                <img src="https://image.tmdb.org/t/p/w500/{{movieDetails.backdrop_path}}" >
+            </div>
+            <div class="detailsContainer">
+                <h2 class="display-4 font-italic">{{movieDetails.title}}</h2>
+                <div class="headerInfo">
+                    <h3> Overview </h3>
+                    <div class="overview">
+                        {{movieDetails.overview}}
+                    </div>
+                    <div class="genres">
+                        <h3> Genres: </h3>
+                        <ul *ngFor="let genre of movieDetails.genres" class="genre">
+                            <li>{{genre.name}} </li>
+                        </ul>
+                    </div>
+                    <h4> Vote: {{movieDetails.vote_average}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
